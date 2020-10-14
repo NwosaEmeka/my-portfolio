@@ -27,6 +27,7 @@ class Contact extends Component{
   };
   
   handleInput = e => this.setState({ [e.target.name]: e.target.value });
+  
 
   render() {
     const { name, email, message } = this.state;
@@ -35,7 +36,7 @@ class Contact extends Component{
       <h2 className="contact__header">Lets Work Together</h2>
       <div className="contact__content">
         <p className="sub__heading">
-          I'm currently AVAILABLE for any frontEnd developer role. Think I might be right candidate for your next adventure or have a question, my inbox is very much open.
+          I'm currently AVAILABLE for any frontEnd developer role. Think I might be right candidate for your next adventure or have a question? My inbox is very much open.
         </p>
           <form
             name="contact"
