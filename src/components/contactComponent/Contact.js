@@ -49,12 +49,13 @@ class Contact extends Component{
               className="form__input"
               type="text"
               name="name"
+              value={name}
               required
             />
-              <label htmlFor="name"
-                className={name ? 'form__label shrink' : 'form__label'}
+            <label htmlFor="name"
+              className={name ? 'form__label shrink' : 'form__label'}
               >Name
-              </label>
+            </label>
           </div>
           <div className="form__element">
             <input
