@@ -50,6 +50,7 @@ class Contact extends Component{
               type="text"
               name="name"
               value={name}
+              onChange={this.handleInput}
               required
             />
             <label htmlFor="name"
