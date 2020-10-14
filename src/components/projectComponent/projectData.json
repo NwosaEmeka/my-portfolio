@@ -29,8 +29,8 @@
         "title": "Personal Portfolio",
         "description": "A fully responsive, accessible personal website built with ReactJS and hosted on netlify.",
         "image": "/asset/portfolio.jpg",
-        "url": "https://www.youtube.com/watch?v=XtMThy8QKqU&t=9358s",
-        "github": ""
+        "url": "https://nwosaemeka.netlify.app/",
+        "github": "https://github.com/NwosaEmeka/my-portfolio"
         
       }
     ]
