@@ -1,0 +1,22 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+.footer__text{
+  margin-bottom: 0.5rem;
+}
+.footer__text a{
+  color: var(--secondary--clr);
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+.footer__text a:hover{
+  color: var(--pry--clr);
+}

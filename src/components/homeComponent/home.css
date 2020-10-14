@@ -1,0 +1,72 @@
+.hero__page {
+  margin-top: 1rem;
+  background: linear-gradient(rgba(14, 26, 45, 0.85), rgba(14, 26, 45, 1)), url('/images/Emeka.png') no-repeat right/contain fixed;
+}
+.hero__content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+.welcome_para {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--secondary--clr);
+}
+
+
+.header_text {
+	margin: 2.5rem 0 1rem;
+	font-size: clamp(40px, 8vw, 80px);
+	text-transform: uppercase;
+	color: var(--white--clr);
+	letter-spacing: 1.2px;
+}
+.special__letter {
+	color: #66bd90;
+}
+.hero_text {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--secondary--clr);
+	max-width: 31.5rem;
+	line-height: 1.5;
+}
+.hero__btn {
+	margin-top: 4rem;
+}
+
+
+
+@media (max-width: 64rem) {
+	.hero__btn {
+		margin-top: 3.7rem;
+		align-items: center;
+	}
+}
+@media (max-width: 36.3rem) {
+	.container {
+		padding: 0 0.6rem;
+	}
+	.hero__page {
+		display: block;
+		background: linear-gradient(rgba(14, 26, 45, 0.85), rgba(14, 26, 45, 1)), url('/images/picture2.jpeg') no-repeat right/cover fixed;
+		padding: 0.35rem;
+	}
+	.hero__content {
+		text-align: left;
+	}
+	.header_text {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+	}
+
+	.hero_text {
+		font-size: 0.9rem;
+		line-height: 1.4;
+  }
+  .btn{
+    width: 90%;
+  }
+}

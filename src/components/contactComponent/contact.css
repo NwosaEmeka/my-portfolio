@@ -1,0 +1,113 @@
+.contact__header{
+  text-align: center;
+}
+.contact__content{
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 0.8rem;
+}
+.sub__heading{
+  text-align: center;
+  color: var(--white--clr);
+  font-weight:600;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.form__group{
+  padding: 1.2rem;
+  padding-top:0.1rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+.form__element{
+  margin: 2rem 0;
+  position: relative;
+}
+.form__input{
+  background:  #0f1c30;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-bottom: 1px solid gray;
+  margin: 2rem 0;
+}
+.text_area{
+  height: 10rem;
+}
+.form__input:focus{
+  outline: none;
+}
+.form__input:focus +.form__label{
+  top: -14px;
+  font-size: 1rem;
+}
+.form__label{
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.form__label.shrink{
+  top: -14px;
+  font-size: 1rem;
+}
+button[type='submit']{
+  width:100%;
+  margin: 0;
+}
+.contact__links{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__item{
+  margin-bottom: 2.5rem;
+}
+.contact__link{
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.contact__link:hover{
+  color:  var(--pry--clr);
+}
+.icon{
+  color:#fff;
+  margin: 0.5rem;
+  padding: 0.9rem;
+  background-color: rgb(30, 124, 153);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+    transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.icon:hover{
+  background-color: var(--pry--clr);
+}

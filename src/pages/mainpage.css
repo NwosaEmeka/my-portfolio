@@ -1,0 +1,37 @@
+
+.container {
+	max-width: 1200px;
+	width: 97%;
+	min-height: 100vh;
+	margin: 0 auto;
+	margin-top: 80px;
+	overflow: hidden;
+	padding: 0 6rem;
+}
+.sections{
+  padding-top: 6.25rem;
+}
+.section__header{
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	position: relative;
+	letter-spacing: 1.2px;
+	font-size: 1.25rem;
+	opacity:0.75;
+}
+.section__header:after{
+	content: "";
+	position: relative;
+	display: block;
+	top:0.2rem;
+	margin-left: 0.6rem;
+	width: 10rem;
+	height: 1px;
+	background-color: var(--secondary--clr);
+}
+@media (max-width: 36rem) {
+	.container {
+		padding: 0 10px;
+  }
+}
