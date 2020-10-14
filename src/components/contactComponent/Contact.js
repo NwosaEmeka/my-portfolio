@@ -25,7 +25,7 @@ class Contact extends Component {
       body: encode({"form-name": "contact", ...this.state})
     })
       .then(() => {
-        this.setState = ({ name: "", email: "", message: "" })
+        this.setState({ name: "", email: "", message: "" })
         alert("Submission successful, thank you")
       })
     .catch((err) => alert(err))
@@ -40,7 +40,20 @@ class Contact extends Component {
         <p className="sub__heading">
           I'm currently AVAILABLE for any frontEnd developer role. Think I might be right candidate for your next adventure or have a question, my inbox is very much open.
         </p>
-        <form action="" className="form__group" onSubmit={this.handleSubmit}>
+          <form action=""
+            name="contact"
+            className="form__group"
+            onSubmit={this.handleSubmit}
+            data-netlify="true"
+            data-nelify-honeypot="bot-field"
+          >
+            {/* required for netlify form submssion */}
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                <input name="bot-field" onChange={this.handleInput}/>
+              </label>
+            </p>
           <div className="form__element">
             <input
               className="form__input"
