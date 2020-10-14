@@ -23,7 +23,7 @@
   -o-border-radius: 0.4rem;
 }
 .form__element{
-  margin: 2rem 0;
+  margin: 3rem 0;
   position: relative;
 }
 .form__input{
@@ -34,13 +34,13 @@
   display: block;
   width: 100%;
   border: none;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
   border-bottom: 1px solid gray;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 .text_area{
   height: 10rem;
@@ -49,7 +49,7 @@
   outline: none;
 }
 .form__input:focus +.form__label{
-  top: -14px;
+  top: -22px;
   font-size: 1rem;
 }
 .form__label{
@@ -64,13 +64,14 @@
   -o-transition: all 0.3s ease;
 }
 .form__label.shrink{
-  top: -14px;
+  top: -22px;
   font-size: 1rem;
 }
 button[type='submit']{
   width:100%;
   margin: 0;
   border:none;
+  outline:none;
 }
 .contact__links{
   margin-top: 1.5rem;
