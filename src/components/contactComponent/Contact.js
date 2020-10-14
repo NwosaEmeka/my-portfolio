@@ -1,36 +1,33 @@
-import React, {Component} from 'react'
+import React,{Component} from 'react'
 import {FaEnvelope, FaPhone } from 'react-icons/fa'
 import './contact.css'
 
-// handling netlify form submit
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  .join("&")
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
 }
-class Contact extends Component {
+  
+class Contact extends Component{
   constructor(props) {
-    super(props)
-    this.state ={name:"", email:"", message:""}
-  }
-  handleInput = (e) => {
-    this.setState({[e.target.name] : e.target.value})
-  }
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlendoded" },
-      body: encode({"form-name": "contact", ...this.state})
-    })
-      .then(() => {
-        this.setState({ name: "", email: "", message: "" })
-        alert("Submission successful, thank you")
-      })
-    .catch((err) => alert(err))
+      super(props);
+      this.state = { name: "", email: "", message: "" };
   }
   
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+  
+  handleInput = e => this.setState({ [e.target.name]: e.target.value });
+
   render() {
     const { name, email, message } = this.state;
     return (
@@ -40,28 +37,19 @@ class Contact extends Component {
         <p className="sub__heading">
           I'm currently AVAILABLE for any frontEnd developer role. Think I might be right candidate for your next adventure or have a question, my inbox is very much open.
         </p>
-          <form action=""
+          <form
             name="contact"
+            method="post"
             className="form__group"
             onSubmit={this.handleSubmit}
-            data-netlify="true"
-            data-nelify-honeypot="bot-field"
           >
-            {/* required for netlify form submssion */}
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                <input name="bot-field" onChange={this.handleInput}/>
-              </label>
-            </p>
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form__element">
             <input
               className="form__input"
               type="text"
               name="name"
               required
-                value={name}
-                onChange={this.handleInput}
             />
               <label htmlFor="name"
                 className={name ? 'form__label shrink' : 'form__label'}
@@ -117,7 +105,7 @@ class Contact extends Component {
     </section>
   )
   }
-  
+    
 }
 
 export default Contact
