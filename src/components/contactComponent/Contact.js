@@ -21,7 +21,7 @@ class Contact extends Component{
       body: encode({ "form-name": "contact", ...this.state })
     })
       .then(() => {
-        this.setState({})
+        this.setState({name: "", email: "", message: ""})
         alert("Success!")
       })
       .catch(error => alert(error));
