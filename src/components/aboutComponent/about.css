@@ -1,0 +1,36 @@
+.about__content{
+  margin-top: 2rem;
+}
+.about__text{
+  text-align: center;
+  color: var(--white--clr);
+  font-size: clamp(1rem, 1.6vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tool__list{
+  max-width: 25rem;
+  margin: 0.5rem auto 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tool__list li{
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  color: var(--white--clr);
+}
+.tool__list li:before{
+  content: "";
+  height: 5px;
+  width:5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--pry--clr);
+  position: absolute;
+  left:8px;
+  top: 50%;
+}

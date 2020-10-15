@@ -6,7 +6,7 @@ import "./home.css"
 
 
 function Home() {
-
+  
   useEffect(() => {
     AOS.init({
       duration: 900
@@ -22,7 +22,7 @@ function Home() {
           <h1 className="header_text" data-aos="fade-right" data-aos-once="true">
             <span className="special__letter">N</span>wo<span className="special__letter">s</span>a E<span className="special__letter">m</span>ek<span className="special__letter">a</span>
           </h1>
-          <p className="hero_text" data-aos="fade-left" data-aos-once="true">I’m a creative web developer based in Kuala Lumpur Malaysia who is passionate about building exceptional websites and applications that solves problems.
+          <p className="hero_text" data-aos="fade-left" data-aos-once="true">I’m a creative software developer based in Kuala Lumpur Malaysia who is passionate about building exceptional websites and applications that solves problems.
           </p>
           <div className="hero__btn" data-aos="fade-up" data-aos-once="true">
             <a href="#projects"className="btn btn-pry">See my work</a>

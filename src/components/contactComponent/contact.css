@@ -39,7 +39,7 @@
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
   -o-border-radius: 0.4rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--pry--clr);
   margin: 2.5rem 0;
 }
 .text_area{
