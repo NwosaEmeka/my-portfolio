@@ -94,16 +94,16 @@ class Contact extends Component{
         </form>
           <div className="contact__links">
             <div className="contact__item">
-              <a className="icon" href="tel:+60102544276">
+              <a className="icon"aria-label="call phone number" href="tel:+60102544276">
                 <FaPhone />
               </a>
-              <a className="contact__link" href="tel:+60102544276">+60-102544276</a>
+              <a className="contact__link" aria-label="call phone number"href="tel:+60102544276">+60-102544276</a>
             </div>
             <div className="contact__item">
-              <a className="icon" href="mailto:nwosaa.emeka@gmail.com">
+              <a className="icon" aria-label="send email" href="mailto:nwosaa.emeka@gmail.com">
                 <FaEnvelope />
               </a> 
-              <a className="contact__link" href="mailto:nwosaa.emeka@gmail.com">nwosaa.emeka@gmail.com</a>
+              <a className="contact__link" aria-label="send email" href="mailto:nwosaa.emeka@gmail.com">nwosaa.emeka@gmail.com</a>
             </div>
         </div>
       </div>
