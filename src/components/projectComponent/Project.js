@@ -14,7 +14,7 @@ function Project({ project }) {
     <div className="project__content">
       <a href={project.url} className="project__image col">
         <div className="image" data-aos="zoom-out">
-          <img src={project.image} alt={project.title}/>
+          <img src={project.image} alt={project.title} loading="lazy" />
         </div>
       </a>
       <div className="project__text-content col">

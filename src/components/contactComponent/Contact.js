@@ -71,7 +71,7 @@ class Contact extends Component{
               value={email}
               onChange={this.handleInput}
             />
-              <label htmlFor="name"
+              <label htmlFor="email"
                 className={email ? 'form__label shrink' : 'form__label'}
               >Email
               </label>

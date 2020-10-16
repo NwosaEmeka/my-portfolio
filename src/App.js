@@ -1,24 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import Loader from './components/loaderComponent/Loader';
-import MainPage from './pages/MainPage';
+import React, {lazy, Suspense } from 'react'
+import Loader from './components/loaderComponent/Loader'
 import './App.css';
 
+const MainPage = lazy(() => import('./pages/MainPage'))
+
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 3000);
-    return() => clearTimeout(timer)
-  })
   return (
-    <div className="App">
-      {isLoading ?
-        <Loader /> :
+    <Suspense fallback ={<Loader />}>
+      <div className="App">
         <MainPage />
-    }
-      
     </div>
+    </Suspense>
   );
 }
 
