@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaGithub,  FaLinkedinIn, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaGithub,  FaLinkedinIn, FaTwitter, FaMedium } from 'react-icons/fa'
 import './socialicons.css'
 
 function SocialIcons() {
@@ -17,6 +17,9 @@ function SocialIcons() {
         </a>
         <a href="https://twitter.com/Gaffer_ng" aria-label="Link to Twitter" className="social__icon">
           <FaTwitter size={18}/>
+        </a>
+        <a href="https://medium.com/@mykev.paul" aria-label="Link to Medium" className="social__icon">
+          <FaMedium size={18}/>
         </a>
       </div>
     </div>
