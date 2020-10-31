@@ -1,6 +1,6 @@
 .hero__page {
   margin-top: 1rem;
-  background: linear-gradient(rgba(14, 26, 45, 0.85), rgba(14, 26, 45, 1)), url('/images/Emeka.png') no-repeat right/contain fixed;
+	background: linear-gradient(rgba(14, 26, 45, 0.85), rgba(14, 26, 45, 1)), url('/images/Emeka.png') no-repeat right/contain fixed;
 }
 .hero__content {
 	height: 100%;

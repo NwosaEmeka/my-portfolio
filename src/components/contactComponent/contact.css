@@ -28,7 +28,7 @@
 }
 .form__input{
   background:  #0f1c30;
-  color: #fff;
+  color: var(--gray--clr);
   font-size: 1.1rem;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -76,13 +76,14 @@ button[type='submit']{
 .contact__links{
   margin-top: 1.5rem;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .contact__item{
   margin-bottom: 2.5rem;
 }
 .contact__link{
-  color: #fff;
+  color: var(--gray--clr);
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s linear;
