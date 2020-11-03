@@ -1,6 +1,6 @@
 # Personal Website
 
-![Preview Image](/asset/portflio.JPG)
+![https://nwosaemeka.netlify.app/](https://nwosaemeka.netlify.app/)
 
 ## Description
 
