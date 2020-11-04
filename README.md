@@ -18,6 +18,6 @@ A fully responsive, accessible personal website built with React ^16.13.1
 
 ```
 `npm start` - Runs the app in the development mode
-`npm build` - Optimize the app and build it for production
+`npm run build` - Optimize the app and build it for production
 
 ```
