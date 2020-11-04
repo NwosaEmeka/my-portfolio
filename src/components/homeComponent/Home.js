@@ -26,7 +26,7 @@ function Home() {
           </p>
           <div className="hero__btn" data-aos="fade-up" data-aos-once="true">
             <a href="#projects"className="btn btn-pry" aria-label="see my projects">See my work</a>
-            <a href="/asset/EmekaNwosa Resume.pdf" download="Nwosa Emeka CV" className="btn btn-secondary" aria-label="download my resume">Resume</a>
+            <a href="/asset/NwosaEmeka_resume.pdf" download="Nwosa Emeka CV" className="btn btn-secondary" aria-label="download my resume">Resume</a>
           </div>
       </div>
       <Snowfall
